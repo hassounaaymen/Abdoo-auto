@@ -46,7 +46,7 @@ app.delete('/devis',postRoutesdevis );
 app.patch('/facture',postRoutesFacture );
 app.delete('/facture',postRoutesFacture );
 
-const   CONNECTION_URL ='mongodb+srv://abdoo_auto:xxxxxxxx@cluster0.si6ly.mongodb.net/abdooauto?retryWrites=true&w=majority';
+const   CONNECTION_URL ='mongodb+srv://xxxxxxxx:xxxxxxxx@cluster0.si6ly.mongodb.net/xxxxxxx?retryWrites=true&w=majority';
 const PORT = 5000;
 mongoose.connect(CONNECTION_URL,  {useNewUrlParser: true, useUnifiedTopology: true })
 .then(() => app.listen(PORT,()=> console.log('Server run on port: 5000')))
